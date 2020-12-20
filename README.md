@@ -1,4 +1,4 @@
-# ITI Amazon Clone project
+# ITI Amazon Clone project - 2021
 
 ## Project team members:
 
