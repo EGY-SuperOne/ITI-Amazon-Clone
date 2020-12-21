@@ -1,3 +1,5 @@
+/**********************/
+/********************/
 .MM_SearchInput {
   width: 55vw;
   margin: auto;
@@ -18,11 +20,54 @@
 
 .MM_NavbarItems span {
   display: block;
+  font-weight: lighter;
+}
+
+.MM_NavbarItems a {
   font-weight: bold;
+}
+
+.MM_NavbarItems .MM_SignIn button {
+  width: 100px;
+  border: 1px solid #ff9900;
+  font-size: 0.8rem;
+}
+
+.MM_NavbarItems .MM_SignIn span {
+  font-size: 0.7rem;
+}
+
+.MM_NavbarItems .MM_SignIn span a {
+  text-decoration: none;
 }
 
 .MM_NavbarItems .MM_Cart span {
   display: inline-block;
   margin-top: 5%;
+}
+
+.MM_ulDropDown {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.MM_ulDropDown a {
+  text-decoration: none;
+  color: #808080;
+  font-weight: lighter;
+}
+
+.MM_ulDropDown a:hover {
+  text-decoration: underline;
+}
+
+/**********************/
+/********************/
+.MM_Terms {
+  font-size: 0.8rem;
+}
+
+.MM_Terms a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

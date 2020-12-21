@@ -1,3 +1,7 @@
+/**********************/
+// Home Page Classes //
+/********************/
+
 .MM_SearchInput {
   width: 55vw;
   margin: auto;
@@ -14,12 +18,53 @@
   font-size: smaller;
   span {
     display: block;
+    font-weight: lighter;
+  }
+  a {
     font-weight: bold;
+  }
+
+  .MM_SignIn {
+    button {
+      width: 100px;
+      border: 1px solid #ff9900;
+      font-size: 0.8rem;
+    }
+    span {
+      font-size: 0.7rem;
+      a {
+        text-decoration: none;
+      }
+    }
   }
   .MM_Cart {
     span {
       display: inline-block;
       margin-top: 5%;
     }
+  }
+}
+
+.MM_ulDropDown {
+  list-style: none;
+  font-size: 0.8rem;
+  a {
+    text-decoration: none;
+    color: #808080;
+    font-weight: lighter;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/**********************/
+// Sign-in Classes //
+/********************/
+
+.MM_Terms {
+  font-size: 0.8rem;
+  a {
+    text-decoration: none;
   }
 }
