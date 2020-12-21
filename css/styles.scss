@@ -1,0 +1,25 @@
+.MM_SearchInput {
+  width: 55vw;
+  margin: auto;
+  &:hover {
+    border: 3px solid #ff9900 !important;
+    border-radius: 7px;
+  }
+  .MM_bg-search {
+    background-color: #f3a847;
+  }
+}
+
+.MM_NavbarItems {
+  font-size: smaller;
+  span {
+    display: block;
+    font-weight: bold;
+  }
+  .MM_Cart {
+    span {
+      display: inline-block;
+      margin-top: 5%;
+    }
+  }
+}
