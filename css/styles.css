@@ -1,3 +1,9 @@
+.form-control:focus {
+  border-color: #ff9900;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 153, 0, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 153, 0, 0.6);
+}
+
 /**********************/
 /********************/
 .MM_SearchInput {
@@ -5,13 +11,8 @@
   margin: auto;
 }
 
-.MM_SearchInput:hover {
-  border: 3px solid #ff9900 !important;
-  border-radius: 7px;
-}
-
 .MM_SearchInput .MM_bg-search {
-  background-color: #f3a847;
+  background-color: #f3c64a;
 }
 
 .MM_NavbarItems {
@@ -28,9 +29,12 @@
 }
 
 .MM_NavbarItems .MM_SignIn button {
-  width: 100px;
-  border: 1px solid #ff9900;
-  font-size: 0.8rem;
+  background-color: #ffd04f;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+}
+
+.MM_NavbarItems .MM_SignIn button:hover {
+  background-color: #f3c64a;
 }
 
 .MM_NavbarItems .MM_SignIn span {
@@ -63,11 +67,83 @@
 
 /**********************/
 /********************/
-.MM_Terms {
+.MM_signInContainer .MM_signInCard, .MM_signInContainer .MM_buttomRights {
   font-size: 0.8rem;
 }
 
-.MM_Terms a {
+.MM_signInContainer .MM_signInCard a, .MM_signInContainer .MM_buttomRights a {
   text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.MM_signInContainer .MM_signInCard a:hover, .MM_signInContainer .MM_buttomRights a:hover {
+  text-decoration: underline;
+  color: #ff9900;
+}
+
+.MM_signInContainer .MM_signInCard button, .MM_signInContainer .MM_buttomRights button {
+  background-color: #ffd04f;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+}
+
+.MM_signInContainer .MM_signInCard button:hover, .MM_signInContainer .MM_buttomRights button:hover {
+  background-color: #f3c64a;
+}
+
+.MM_signInContainer .MM_signInCard .dropdown ul, .MM_signInContainer .MM_buttomRights .dropdown ul {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.MM_signInContainer .MM_newToAmazon p {
+  font-size: 0.8rem;
+  color: #767676;
+  position: relative;
+}
+
+.MM_signInContainer .MM_newToAmazon p::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #76767686;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.MM_signInContainer .MM_newToAmazon p::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #76767686;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.MM_signInContainer .MM_newToAmazon span {
+  background: #fff;
+}
+
+.MM_signInContainer .MM_newToAmazon button {
+  background-color: #f1f1f1;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+}
+
+.MM_signInContainer .MM_newToAmazon button:hover {
+  background-color: #e0e0e0;
+}
+
+.MM_signInContainer .MM_buttomRights {
+  font-size: 0.7rem;
+}
+
+.MM_signInContainer .MM_buttomRights a {
+  font-size: 0.7rem;
+  margin: 0 2%;
 }
 /*# sourceMappingURL=styles.css.map */

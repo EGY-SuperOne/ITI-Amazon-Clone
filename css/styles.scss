@@ -1,3 +1,21 @@
+// Changed input focus color
+.form-control:focus {
+  border-color: #ff9900;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(255, 153, 0, 0.6);
+}
+
+// Main button color
+@mixin mainBtnColor {
+  button {
+    background-color: #ffd04f;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    &:hover {
+      background-color: #f3c64a;
+    }
+  }
+}
+
 /**********************/
 // Home Page Classes //
 /********************/
@@ -5,12 +23,10 @@
 .MM_SearchInput {
   width: 55vw;
   margin: auto;
-  &:hover {
-    border: 3px solid #ff9900 !important;
-    border-radius: 7px;
-  }
+
   .MM_bg-search {
-    background-color: #f3a847;
+    // background-color: #f3a847;
+    background-color: #f3c64a;
   }
 }
 
@@ -25,11 +41,8 @@
   }
 
   .MM_SignIn {
-    button {
-      width: 100px;
-      border: 1px solid #ff9900;
-      font-size: 0.8rem;
-    }
+    @include mainBtnColor;
+
     span {
       font-size: 0.7rem;
       a {
@@ -62,9 +75,74 @@
 // Sign-in Classes //
 /********************/
 
-.MM_Terms {
-  font-size: 0.8rem;
-  a {
-    text-decoration: none;
+.MM_signInContainer {
+  .MM_signInCard {
+    font-size: 0.8rem;
+    a {
+      text-decoration: none;
+      font-size: 0.8rem;
+      &:hover {
+        text-decoration: underline;
+        color: #ff9900;
+      }
+    }
+
+    @include mainBtnColor;
+
+    .dropdown {
+      ul {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  .MM_newToAmazon {
+    p {
+      font-size: 0.8rem;
+      color: #767676;
+      position: relative;
+    }
+    p::before {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #76767686;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -2;
+    }
+    p::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #76767686;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: -2;
+    }
+    span {
+      background: #fff;
+    }
+    button {
+      background-color: #f1f1f1;
+      border: 1px solid rgba(128, 128, 128, 0.397);
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .MM_buttomRights {
+    @extend .MM_signInCard;
+    font-size: 0.7rem;
+    a {
+      font-size: 0.7rem;
+      margin: 0 2%;
+    }
   }
 }
