@@ -20,12 +20,14 @@
     <div class="container MM_signInContainer">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mx-auto text-center mt-3 mb-3">
-          <img
-            src="/images/logo/Amazon_logo.png"
-            alt=""
-            width="30%"
-            height="auto"
-          />
+          <a href="/index.html">
+            <img
+              src="/images/logo/Amazon_logo.png"
+              alt=""
+              width="30%"
+              height="auto"
+            />
+          </a>
         </div>
       </div>
 
@@ -36,42 +38,37 @@
               <form>
                 <div class="mb-3">
                   <p class="fs-3">Create account</p>
-                  <label for="exampleInputEmail1" class="form-label"
+                  <label for="name" class="form-label fw-bold"
                     >Your name
                   </label>
+                  <input type="text" class="form-control mb-3" id="name" />
+                  <label for="email" class="form-label fw-bold">Email </label>
                   <input
                     type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
+                    class="form-control mb-3"
+                    id="email"
                     aria-describedby="emailHelp"
                   />
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email
-                  </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <label for="exampleInputEmail1" class="form-label"
+                  <label for="password" class="form-label fw-bold"
                     >Password
                   </label>
                   <input
-                    type="email"
+                    type="password"
                     class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
+                    id="password"
                     placeholder="At least 6 characters"
                   />
-                  <label for="exampleInputEmail1" class="form-label"
+                  <div class="form-text mb-3">
+                    <i class="fas fa-info" style="color: rgb(0, 152, 212)"></i>
+                    Passwords must be at least 6 characters.
+                  </div>
+                  <label for="confirm-password" class="form-label fw-bold"
                     >Re-enter password
                   </label>
                   <input
-                    type="email"
+                    type="password"
                     class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
+                    id="confirm-password"
                   />
                 </div>
 
@@ -85,45 +82,22 @@
                 <a href="#">Privacy Notice</a>.</span
               >
 
-              <div class="dropdown mt-3">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Need help?
-                </a>
+              <hr class="my-4" />
 
-                <ul
-                  class="dropdown-menu position-relative pt-0 pb-4"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <li class="mb-2">
-                    <a href="#">Forgot your password?</a>
-                  </li>
-                  <li>
-                    <a href="#">Other issues with Sign-In</a>
-                  </li>
-                </ul>
-              </div>
+              <span
+                >Already have an account?
+                <a href="/signin.html"
+                  >Sign-In
+                  <i
+                    class="fas fa-caret-right"
+                    style="font-size: 0.7rem"
+                  ></i></a
+              ></span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div
-          class="col-sm-12 col-md-6 col-lg-4 mx-auto text-center mt-4 mb-2 MM_newToAmazon"
-        >
-          <p><span> New to Amazon? </span></p>
-          <button type="submit" class="btn bg-gradient col-12 p-1">
-            Create your Amazon account
-          </button>
-        </div>
-      </div>
       <div class="row">
         <div
           class="col-sm-12 col-md-8 col-lg-6 mx-auto text-center MM_buttomRights"

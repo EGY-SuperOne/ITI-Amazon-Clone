@@ -9,7 +9,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/e22536751b.js"
       crossorigin="anonymous"
@@ -19,7 +19,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="index.html">
           <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:cc="http://creativecommons.org/ns#"
@@ -148,7 +148,7 @@
                 <i class="fas fa-map-marker-alt"></i> Egypt</a
               >
             </li>
-            <form class="d-flex MM_SearchInput mx-3">
+            <form class="d-flex MM_SearchInput mx-3" action="signin.html">
               <div class="input-group">
                 <select class="form-select" aria-label="Default select example">
                   <option selected disabled>All</option>
@@ -240,9 +240,11 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <span class="input-group-text MM_bg-search" id="basic-addon1"
-                  ><i class="fas fa-search"></i
-                ></span>
+                <span class="input-group-text MM_bg-search" id="basic-addon1">
+                  <a href="index.html">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </span>
               </div>
             </form>
 
@@ -255,12 +257,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img
-                  src="/images/icons/usa.png"
-                  alt=""
-                  srcset=""
-                  width="30px"
-                />
+                <img src="images/icons/usa.png" alt="" srcset="" width="30px" />
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -289,14 +286,14 @@
 
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="text-center MM_SignIn">
-                  <a href="/signin.html"
+                  <a href="signin.html"
                     ><button type="button" class="btn bg-gradient">
                       Sign In
                     </button></a
                   >
                   <br />
                   <span class="my-1"
-                    >New customer? <a href="">Start here.</a>
+                    >New customer? <a href="register.html">Start here.</a>
                   </span>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
