@@ -16,22 +16,35 @@
   }
 }
 
+@mixin secondaryBtnColor {
+  button {
+    background-color: #f1f1f1;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
 /**********************/
 // Home Page Classes //
 /********************/
+
+.MM_navOne {
+  background-color: #131921 !important;
+}
 
 .MM_SearchInput {
   width: 55vw;
   margin: auto;
 
   .MM_bg-search {
-    // background-color: #f3a847;
-    background-color: #f3c64a;
+    background-color: #febd69;
   }
 }
 
 .MM_NavbarItems {
-  font-size: smaller;
+  font-size: 0.8em;
   span {
     display: block;
     font-weight: lighter;
@@ -44,7 +57,7 @@
     @include mainBtnColor;
 
     span {
-      font-size: 0.7rem;
+      font-size: 0.7em;
       a {
         text-decoration: none;
       }
@@ -60,7 +73,7 @@
 
 .MM_ulDropDown {
   list-style: none;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   a {
     text-decoration: none;
     color: #808080;
@@ -71,16 +84,63 @@
   }
 }
 
-/**********************/
-// Sign-in Classes //
-/********************/
+.MM_navTwo {
+  background-color: #232f3e !important;
+  height: 2.5em;
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      color: #111111;
+      display: block;
+    }
+  }
+
+  #closebtn {
+    display: none;
+    position: relative;
+    top: -90px;
+    left: 300px;
+    font-size: 60px;
+    font-weight: lighter;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .MM_links {
+    a {
+      font-size: 0.9em;
+    }
+  }
+}
+
+/******************************/
+// Sign-in & Regiser Classes //
+/****************************/
 
 .MM_signInContainer {
   .MM_signInCard {
-    font-size: 0.8rem;
+    font-size: 0.8em;
     a {
       text-decoration: none;
-      font-size: 0.8rem;
+      font-size: 0.9em;
       &:hover {
         text-decoration: underline;
         color: #ff9900;
@@ -93,13 +153,14 @@
       ul {
         border: none;
         background-color: rgba(0, 0, 0, 0);
+        font-size: 1em;
       }
     }
   }
 
   .MM_newToAmazon {
     p {
-      font-size: 0.8rem;
+      font-size: 0.8em;
       color: #767676;
       position: relative;
     }
@@ -128,21 +189,125 @@
     span {
       background: #fff;
     }
-    button {
-      background-color: #f1f1f1;
-      border: 1px solid rgba(128, 128, 128, 0.397);
-      &:hover {
-        background-color: #e0e0e0;
-      }
-    }
+
+    @include secondaryBtnColor;
   }
 
   .MM_buttomRights {
     @extend .MM_signInCard;
-    font-size: 0.7rem;
+    font-size: 0.7em;
     a {
-      font-size: 0.7rem;
+      font-size: 0.8em;
       margin: 0 2%;
     }
+  }
+}
+
+/******************************/
+// Search Page Classes //
+/****************************/
+
+.MM_result {
+  box-shadow: 0 4px 6px -6px #222;
+  span {
+    color: #c85500;
+  }
+}
+
+.MM_sideFilter {
+  font-size: 0.9em;
+  border-right: 2px solid rgba(179, 179, 179, 0.473);
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      color: #ff9900;
+    }
+
+    i {
+      color: #ff9900;
+    }
+  }
+
+  form {
+    .input-group {
+      width: 60px;
+      float: left;
+      span {
+        background-color: #fff !important;
+      }
+      input {
+        border-left: none;
+        &:focus {
+          border-color: rgba(0, 0, 0, 0);
+        }
+      }
+
+      &:hover {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px rgba(255, 153, 0, 0.6);
+      }
+    }
+
+    @include secondaryBtnColor;
+  }
+}
+
+.MM_searchResult {
+  .row {
+    margin-bottom: 20px;
+  }
+  .MM_shop {
+    img {
+      width: 100%;
+      height: auto;
+      background-color: #f7f7f7;
+      padding: 10px;
+    }
+    div {
+      display: inline-block;
+      text-align: center;
+      width: 180px;
+      margin: 1% 2% 2% 0;
+      a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          text-decoration: underline;
+          color: #ff9900;
+        }
+      }
+    }
+  }
+
+  .col-md-10 {
+    padding: 20px 0 0 110px;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #ff9900;
+      }
+
+      i {
+        color: #ff9900;
+      }
+    }
+  }
+
+  hr {
+    width: 95%;
+    margin: 0 auto;
+    height: 3px;
+    border: none;
+    background: #a1a1a1;
   }
 }
