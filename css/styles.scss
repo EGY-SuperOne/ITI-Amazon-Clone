@@ -5,6 +5,10 @@
     0 0 8px rgba(255, 153, 0, 0.6);
 }
 
+/***********/
+// Mixins //
+/*********/
+
 // Main button color
 @mixin mainBtnColor {
   button {
@@ -16,6 +20,7 @@
   }
 }
 
+// Secondary button color
 @mixin secondaryBtnColor {
   button {
     background-color: #f1f1f1;
@@ -26,9 +31,9 @@
   }
 }
 
-/**********************/
-// Home Page Classes //
-/********************/
+/****************************/
+// Navigation bars Classes //
+/**************************/
 
 .MM_navOne {
   background-color: #131921 !important;
@@ -203,9 +208,9 @@
   }
 }
 
-/******************************/
+/************************/
 // Search Page Classes //
-/****************************/
+/**********************/
 
 .MM_result {
   box-shadow: 0 4px 6px -6px #222;
@@ -289,6 +294,12 @@
     }
   }
 
+  .MM_relatedSearch {
+    img {
+      background-color: #ffffff;
+    }
+  }
+
   .col-md-10 {
     padding: 20px 0 0 110px;
     a {
@@ -311,3 +322,113 @@
     background: #a1a1a1;
   }
 }
+
+/**********************/
+// Cart Page Classes //
+/********************/
+
+.MM_shoppingCart {
+  img {
+    width: 150%;
+    height: auto;
+  }
+  .col-10 {
+    padding: 10px 0 0 60px;
+    line-height: 1.7;
+    div {
+      font-size: 0.8em;
+    }
+    button {
+      background-color: #f0f2f2;
+      border: 1px solid #b4b4b4;
+      border-radius: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #007185;
+      &:hover {
+        color: #ff9900;
+      }
+    }
+
+    .MM_itemOptions {
+      a {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:nth-child(1) {
+          border-left: 1px solid #b4b4b4;
+        }
+        &:nth-child(2) {
+          border-left: 1px solid #b4b4b4;
+          border-right: 1px solid #b4b4b4;
+        }
+      }
+    }
+  }
+}
+
+.MM_subTotal {
+  @include mainBtnColor;
+}
+
+.MM_otherProducts {
+  img {
+    width: 300%;
+    height: auto;
+  }
+  .col-10 {
+    padding: 10px 0 0 60px;
+    a {
+      text-decoration: none;
+      font-size: 0.9em;
+      color: #007195;
+      &:hover {
+        color: #ff9900;
+      }
+
+      i {
+        color: #ff9900;
+      }
+    }
+    .MM_price {
+      color: #b65355;
+    }
+    @include mainBtnColor;
+    button {
+      font-size: 0.7em;
+    }
+  }
+}
+
+/****************************/
+// Products Slider Classes //
+/**************************/
+
+/* The heart of the matter */
+
+.tp-list-inline {
+  overflow-x: auto;
+  white-space: nowrap;
+  min-height: 220px;
+}
+
+.tp-product-image {
+  width: auto;
+  height: auto;
+  max-width: 270px;
+  max-height: 200px;
+}
+
+.tp-product-slider {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+/******************/
+// Media Queries //
+/****************/
+
+@import "mediaQueries";
