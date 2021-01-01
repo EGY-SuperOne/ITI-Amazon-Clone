@@ -143,12 +143,74 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 MM_NavbarItems">
             <li class="nav-item">
-              <a class="nav-link active mx-2" aria-current="page" href="#">
+              <a
+                class="nav-link active mx-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                aria-current="page"
+                href="#"
+              >
                 <span class="text-white-50" style="white-space: nowrap"
                   >Deliver to</span
                 >
                 <i class="fas fa-map-marker-alt"></i> Egypt</a
               >
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog w-25">
+                  <div class="modal-content">
+                    <div
+                      class="modal-header bg-gradient"
+                      style="background-color: #f0f0f0"
+                    >
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Choose your location
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <div>
+                            Delivery options and delivery speeds may vary for
+                            different locations
+                          </div>
+                          <div class="text-center">
+                            <button
+                              type="button"
+                              class="btn bg-gradient mt-3 p-1 w-75"
+                              style="background-color: #ffd04f; font-size: 1em"
+                            >
+                              Sign in to see your addresses
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn bg-gradient"
+                        data-bs-dismiss="modal"
+                        style="background-color: #ffd04f"
+                      >
+                        Done
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <form
               class="d-flex MM_SearchInput ms-2 me-3"
@@ -266,12 +328,47 @@
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <div class="mx-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      English
+                    </label>
+                  </div>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li>
+                  <div class="mx-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Arabic
+                    </label>
+                  </div>
+                </li>
 
                 <li>
-                  <a class="dropdown-item" href="#">Japanese</a>
+                  <div class="mx-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Japanese
+                    </label>
+                  </div>
                 </li>
               </ul>
             </li>

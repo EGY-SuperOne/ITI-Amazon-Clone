@@ -328,6 +328,29 @@
   background: #a1a1a1;
 }
 
+.MM_searchResult .pagination > li > a {
+  background-color: #eff1f3 !important;
+  color: #5a5a5a;
+}
+
+.MM_searchResult .pagination > li > a:focus,
+.MM_searchResult .pagination > li > a:hover {
+  background-color: #bdbdbd !important;
+  border-color: #838383;
+}
+
+.MM_searchResult .pagination > .active > a {
+  color: #e77600;
+  background-color: #ffffff !important;
+  border: solid 1px #e77600 !important;
+}
+
+.MM_searchResult .pagination > .active > a:hover {
+  color: #e77600;
+  background-color: #eff1f3 !important;
+  border: solid 1px #838383 !important;
+}
+
 /**********************/
 /********************/
 .MM_shoppingCart img {
