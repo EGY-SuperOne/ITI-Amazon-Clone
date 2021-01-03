@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e22536751b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cart</title>
+  </head>
+  <body style="background-color: #eaeded">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark MM_navOne">
+      <div class="container-fluid">
+        <a class="navbar-brand m-0 text-center" href="index.html">
+          <img
+            src="images/logo/Amazon_white_logo.png"
+            alt=""
+            style="width: 100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 MM_NavbarItems">
+            <li class="nav-item">
+              <a
+                class="nav-link active mx-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                aria-current="page"
+                href="#"
+              >
+                <span class="text-white-50" style="white-space: nowrap"
+                  >Deliver to</span
+                >
+                <i class="fas fa-map-marker-alt"></i> Egypt</a
+              >
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog w-25">
+                  <div class="modal-content">
+                    <div
+                      class="modal-header bg-gradient"
+                      style="background-color: #f0f0f0"
+                    >
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Choose your location
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <div>
+                            Delivery options and delivery speeds may vary for
+                            different locations
+                          </div>
+                          <div class="text-center">
+                            <button
+                              type="button"
+                              class="btn bg-gradient mt-3 p-1 w-75"
+                              style="background-color: #ffd04f; font-size: 1em"
+                            >
+                              Sign in to see your addresses
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn bg-gradient"
+                        data-bs-dismiss="modal"
+                        style="background-color: #ffd04f"
+                      >
+                        Done
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <form
+              class="d-flex MM_SearchInput ms-2 me-3"
+              action="searchResult.html"
+            >
+              <div class="input-group">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>All</option>
+                  <option value="search-alias=aps">All Departments</option>
+                  <option value="search-alias=arts-crafts-intl-ship">
+                    Arts & Crafts
+                  </option>
+                  <option value="search-alias=automotive-intl-ship">
+                    Automotive
+                  </option>
+                  <option value="search-alias=baby-products-intl-ship">
+                    Baby
+                  </option>
+                  <option value="search-alias=beauty-intl-ship">
+                    Beauty & Personal Care
+                  </option>
+                  <option value="search-alias=stripbooks-intl-ship">
+                    Books
+                  </option>
+                  <option value="search-alias=computers-intl-ship">
+                    Computers
+                  </option>
+                  <option value="search-alias=digital-music">
+                    Digital Music
+                  </option>
+                  <option value="search-alias=electronics-intl-ship">
+                    Electronics
+                  </option>
+                  <option value="search-alias=digital-text">
+                    Kindle Store
+                  </option>
+                  <option value="search-alias=instant-video">
+                    Prime Video
+                  </option>
+                  <option value="search-alias=fashion-womens-intl-ship">
+                    Women's Fashion
+                  </option>
+                  <option value="search-alias=fashion-mens-intl-ship">
+                    Men's Fashion
+                  </option>
+                  <option value="search-alias=fashion-girls-intl-ship">
+                    Girls' Fashion
+                  </option>
+                  <option value="search-alias=fashion-boys-intl-ship">
+                    Boys' Fashion
+                  </option>
+                  <option value="search-alias=deals-intl-ship">Deals</option>
+                  <option value="search-alias=hpc-intl-ship">
+                    Health & Household
+                  </option>
+                  <option value="search-alias=kitchen-intl-ship">
+                    Home & Kitchen
+                  </option>
+                  <option value="search-alias=industrial-intl-ship">
+                    Industrial & Scientific
+                  </option>
+                  <option value="search-alias=luggage-intl-ship">
+                    Luggage
+                  </option>
+                  <option value="search-alias=movies-tv-intl-ship">
+                    Movies & TV
+                  </option>
+                  <option value="search-alias=music-intl-ship">
+                    Music, CDs & Vinyl
+                  </option>
+                  <option value="search-alias=pets-intl-ship">
+                    Pet Supplies
+                  </option>
+                  <option value="search-alias=software-intl-ship">
+                    Software
+                  </option>
+                  <option value="search-alias=sporting-intl-ship">
+                    Sports & Outdoors
+                  </option>
+                  <option value="search-alias=tools-intl-ship">
+                    Tools & Home Improvement
+                  </option>
+                  <option value="search-alias=toys-and-games-intl-ship">
+                    Toys & Games
+                  </option>
+                  <option value="search-alias=videogames-intl-ship">
+                    Video Games
+                  </option>
+                </select>
+
+                <input
+                  class="form-control w-50"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span class="input-group-text MM_bg-search" id="basic-addon1">
+                  <a href="searchResult.html">
+                    <i class="fas fa-search" style="color: #000"></i>
+                  </a>
+                </span>
+              </div>
+            </form>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="images/icons/usa.png" alt="" srcset="" width="30px" />
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <div class="mx-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      English
+                    </label>
+                  </div>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <div class="mx-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Arabic
+                    </label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="mx-2 form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault3"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Japanese
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Hello, Sign in</span>
+                Account & Lists
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="text-center MM_SignIn">
+                  <a href="signin.html"
+                    ><button type="button" class="btn bg-gradient">
+                      Sign In
+                    </button></a
+                  >
+                  <br />
+                  <span class="my-1"
+                    >New customer? <a href="register.html">Start here.</a>
+                  </span>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <ul class="MM_ulDropDown">
+                  <li>
+                    <a class="dropdown-item" href="#">Create a List</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Find a List or Registry</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >AmazonSmile Charity Lists</a
+                    >
+                  </li>
+                </ul>
+                <li><hr class="dropdown-divider" /></li>
+
+                <ul class="MM_ulDropDown">
+                  <li>
+                    <a class="dropdown-item" href="#">Account</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Orders</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Recommendations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Browsing History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Watchlist</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Video Purchases & Rentals</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Kindle Unlimited</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Content & Devices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Subscribe & Save Items</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Memberships & Subscriptions</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Music Library</a>
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#"
+                style="white-space: nowrap"
+              >
+                <span>Returns</span>& Orders</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link MM_Cart"
+                href="cart.html"
+                style="white-space: nowrap"
+              >
+                <i
+                  class="fas fa-shopping-cart text-white"
+                  style="font-size: 25px"
+                ></i>
+                <span class="text-white">Cart</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="overlay" onclick="AH_closeNav()"></div>
+    <div id="AH_Sidenav">
+      <div id="AH_sidenav-head">
+        <a
+          href="#"
+          class="text-white ps-4 py-3 fs-4 fw-bold AH_Sidenav-header d-block text-decoration-none"
+        >
+          <i class="fas fa-user-circle"></i> Hello, Sign in</a
+        >
+        <span style="cursor: pointer" id="AH_closebtn" onclick="AH_closeNav()"
+          >&times;</span
+        >
+      </div>
+      <div class="position-relative">
+        <div class="AH_sidenav-body pt-3 row">
+          <h5>Digital Content & Devices</h5>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Amazon Music</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Kindle E-readers & Books</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Appstore for Android</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <hr />
+          <h5>Shop By Department</h5>
+          <div class="AH_sidenav-link col-12 row">
+            <div class="col-11">Electronics</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link col-12 row">
+            <div class="col-11">Computers</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link col-12 row">
+            <div class="col-11">Smart Home</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link col-12 row">
+            <div class="col-11">Arts & Crafts</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div id="shopSeeMore" class="col-12 row m-0 p-0">
+            <hr class="w-75 m-auto" />
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Automotive</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Baby</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Beauty and personal care</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Women's Fashion</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Men's Fashion</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Girls' Fashion</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Boys' Fashion</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Health and Household</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Home and Kitchen</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Industrial and Scientific</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Luggage</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Movies & Television</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Pet supplies</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Software</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Sports and Outdoors</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Tools & Home Improvement</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Toys and Games</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link col-12 row">
+              <div class="col-11">Video Games</div>
+              <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="AH_sidenav-link row" onclick="shopSeeLess()">
+              <div class="col-12 shopSeeMore">
+                See Less <i class="fas fa-chevron-up"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="shopSeeMoreBtn"
+            class="AH_sidenav-link row"
+            onclick="shopSeeMore()"
+          >
+            <div class="col-12 shopSeeMore">
+              See All <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <hr />
+          <h5>Programs & Features</h5>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Gift Cards</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">#FounditOnAmazon</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Amazon Live</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">International Shopping</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Amazon Second Chance</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Full Store Directory</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <hr />
+          <h5>Help & Settings</h5>
+          <div class="AH_sidenav-link row">
+            <div class="col-11">Your Account</div>
+            <div class="col-1"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-1"><i class="fas fa-globe"></i></div>
+            <div class="col-11">English</div>
+          </div>
+          <div class="AH_sidenav-link row">
+            <div class="col-1">
+              <img class="AH_icon-img" src="images/icons/usa.png" alt="US" />
+            </div>
+            <div class="col-11">United States</div>
+          </div>
+          <div class="AH_sidenav-link row"><div class="col-12">Help</div></div>
+          <div class="AH_sidenav-link row">
+            <div class="col-12">Sign In</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm mb-3" id="AH_nav">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                onclick="AH_openNav()"
+                style="cursor: pointer"
+                class="nav-link AH_link"
+                aria-current="page"
+                ><i class="fas fa-bars"></i> All</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link AH_link" aria-current="page" href="#"
+                >Today's Deals</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link AH_link" aria-current="page" href="#"
+                >Customer Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link AH_link" aria-current="page" href="#"
+                >Gift Cards</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link AH_link" aria-current="page" href="#">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link AH_link" aria-current="page" href="#"
+                >Registry</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title m-0">Shopping Cart</h3>
+              <span class="float-end text-muted">Price</span>
+              <div style="clear: both"></div>
+              <hr />
+              <div class="row MM_shoppingCart">
+                <div class="col-2">
+                  <a href="#">
+                    <img
+                      src="https://m.media-amazon.com/images/G/01/appcore/phone/AMZ_FamiyStripe_iPhone_12ProMax.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-10">
+                  <a href="# " class="fs-5"> Apple iPhone 12 Pro Max </a>
+                  <span class="fs-5 fw-bold float-end me-2">$700</span>
+                  <div class="text-danger">
+                    Only 3 left in stock - order soon.
+                  </div>
+                  <div>Shipped from: <a href="#">Amazon.com</a></div>
+                  <div>
+                    Gift options not available. Gift options not available.
+                    <a href="#"> Learn more </a>
+                  </div>
+                  <div>
+                    <span class="dropdown me-2">
+                      <button
+                        class="btn btn-light dropdown-toggle p-1 shadow-sm"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Qty: 1
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">0 (delete)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">3</a>
+                        </li>
+                      </ul>
+                    </span>
+                    <span class="MM_itemOptions">
+                      <a href="#">Delete</a>
+                      <a href="#">Save for later</a>
+                      <a href="#">Compare with similar items</a>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <hr />
+                  <span class="float-end fs-5"
+                    >Subtotal (1 item): <span class="fw-bold"> $700 </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body"></div>
+          </div>
+
+          <div class="mb-3" style="font-size: 0.8em">
+            The price and availability of items at Amazon.com are subject to
+            change. The Cart is a temporary place to store a list of your items
+            and reflects each item's most recent price. Shopping Cart
+            <a href="#">Learn more</a>
+            <br />
+            Do you have a gift card or promotional code? We'll ask you to enter
+            your claim code when it's time to pay.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-12 MM_subTotal mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <span class="fs-5"
+                    >Subtotal (1 item): <span class="fw-bold"> $700 </span>
+                  </span>
+                  <button type="submit" class="btn bg-gradient p-1 my-2 col-12">
+                    Proceed to checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body MM_otherProducts">
+                  <h6 class="card-title">
+                    Customers Who Bought Items in Your Recent History Also
+                    Bought
+                  </h6>
+                  <div class="row">
+                    <div class="col-2">
+                      <a href="#">
+                        <img
+                          src="https://m.media-amazon.com/images/G/01/appcore/phone/AMZ_FamiyStripe_iPhone_12Pro.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <a href="# "> Apple iPhone 12 Pro </a>
+                      <div>
+                        <a href="#">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i
+                            class="fas fa-chevron-down"
+                            style="font-size: 10px"
+                          ></i>
+                          350
+                        </a>
+                      </div>
+                      <span class="MM_price">$650</span>
+                      <button type="submit" class="btn bg-gradient p-1 d-block">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <a href="#">
+                        <img
+                          src="https://m.media-amazon.com/images/G/01/appcore/phone/AMZ_FamiyStripe_iPhone_12.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <a href="# "> Apple iPhone 12 </a>
+                      <div>
+                        <a href="#">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i
+                            class="fas fa-chevron-down"
+                            style="font-size: 10px"
+                          ></i>
+                          330
+                        </a>
+                      </div>
+                      <span class="MM_price">$500</span>
+                      <button type="submit" class="btn bg-gradient p-1 d-block">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <a href="#">
+                        <img
+                          src="https://m.media-amazon.com/images/G/01/appcore/phone/AMZ_FamiyStripe_iPhone_12mini.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <a href="# "> Apple iPhone 12 mini </a>
+                      <div>
+                        <a href="#">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i
+                            class="fas fa-chevron-down"
+                            style="font-size: 10px"
+                          ></i>
+                          280
+                        </a>
+                      </div>
+                      <span class="MM_price">$400</span>
+                      <button type="submit" class="btn bg-gradient p-1 d-block">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2">
+                      <a href="#">
+                        <img
+                          src="https://m.media-amazon.com/images/G/01/appcore/phone/AMZ_FamiyStripe_iPhone_SE-SecondGen._CB434448595_.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <a href="# "> Apple iPhone SE </a>
+                      <div>
+                        <a href="#">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i
+                            class="fas fa-chevron-down"
+                            style="font-size: 10px"
+                          ></i>
+                          400
+                        </a>
+                      </div>
+                      <span class="MM_price">$200</span>
+                      <button type="submit" class="btn bg-gradient p-1 d-block">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="row tp-product-slider m-4">
+            <span class="fs-5 fw-bold p-0 mt-2" style="width: initial"
+              >Customers Who Bought Items in Your Recent History Also Bought
+            </span>
+            <a href="" class="text-reset mt-2" style="width: initial"
+              >Shop now</a
+            >
+            <ul class="tp-list-inline px-0 mt-2">
+              <li class="list-inline-item">
+                <img
+                  alt="Minecraft - Nintendo Switch"
+                  src="https://m.media-amazon.com/images/I/51NV8Uil7wL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/71dIHv1zh7L._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="RUNMUS Gaming Headset Xbox One Headset with 7.1 Surround Sound, PS4 Headset with Noise Canceling Mic &amp; LED Light,..."
+                  src="https://m.media-amazon.com/images/I/41QztBTooxL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/61lnzTv2a0L._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)"
+                  src="https://m.media-amazon.com/images/I/41BP6N0cDVL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/61RS44SioLL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Logitech G203 Prodigy RGB Wired Gaming Mouse – Black"
+                  src="https://m.media-amazon.com/images/I/319KAiGobEL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/71BmDZ6u22L._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Logitech G602 Lag-Free Wireless Gaming Mouse – 11 Programmable Buttons, Upto 2500 DPI"
+                  src="https://m.media-amazon.com/images/I/41Ww3zikowL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/81ZQgWwuVzL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="NUBWO Gaming headsets PS4 N7 Stereo Xbox one Headset Wired PC Gaming Headphones with Noise Canceling Mic , Over Ear..."
+                  src="https://m.media-amazon.com/images/I/41sFQT0I4aL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/61EIHYCUGYL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Orzly Carry Case Compatible with Nintendo Switch - Black Protective Hard Portable Travel Carry Case Shell Pouch for..."
+                  src="https://m.media-amazon.com/images/I/51mZVG8qQZL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/71+wvccA3ML._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="BEBONCOOL PS4 Controller Charger, Controller USB Charging Station Dock for DualShock 4, PlayStation 4 Charging Station..."
+                  src="https://m.media-amazon.com/images/I/41VbT96pAWL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/81UWP87LpwL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="PICTEK Gaming Mouse Wired [7200 DPI] [Programmable] [Breathing Light] Ergonomic Game USB Computer Mice RGB Gamer Desktop..."
+                  src="https://m.media-amazon.com/images/I/41PDAAtkyGL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/61gxUsLtlyL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Redragon S101 Wired Gaming Keyboard and Mouse Combo RGB Backlit Gaming Keyboard with Multimedia Keys Wrist Rest and Red..."
+                  src="https://m.media-amazon.com/images/I/51vOyKGea+L._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="UGREEN Ethernet Adapter USB 2.0 to 10/100 Network RJ45 LAN Wired Adapter Compatible for Nintendo Switch, Wii, Wii U,..."
+                  src="https://m.media-amazon.com/images/I/31aYZs3ij5L._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/51QguyfpCVL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Microsoft Xbox Wireless Adapter for Windows 10"
+                  src="https://m.media-amazon.com/images/I/31fbwd4IoxL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/51UqtdIsVlL._AC_SY400_.jpg"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="PICTEK Gaming Mouse Wired, RGB Chroma Backlit Gaming Mouse, 8 Programmable Buttons, 7200 DPI Adjustable, Comfortable..."
+                  src="https://m.media-amazon.com/images/I/41dqioIt0wL._AC_SY200_.jpg"
+                  class="product-image"
+                  height="200px"
+                  data-a-hires="https://m.media-amazon.com/images/I/61d9C4yCB2L._AC_SY400_.jpg"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="row tp-product-slider m-4">
+            <span class="fs-5 fw-bold p-0 mt-2" style="width: initial"
+              >Inspired by your browsing history
+            </span>
+            <a href="" class="text-reset mt-2" style="width: initial"
+              >Shop now</a
+            >
+            <ul class="tp-list-inline px-0 mt-2">
+              <li class="list-inline-item">
+                <img
+                  alt="Minecraft - Nintendo Switch"
+                  src="https://images-na.ssl-images-amazon.com/images/I/71J38Txcb6L._AC_UL270_SR216,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="RUNMUS Gaming Headset Xbox One Headset with 7.1 Surround Sound, PS4 Headset with Noise Canceling Mic &amp; LED Light,..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/61PbhMOuE4L._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)"
+                  src="https://images-na.ssl-images-amazon.com/images/I/61QEY3YKqqL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Logitech G203 Prodigy RGB Wired Gaming Mouse – Black"
+                  src="https://images-na.ssl-images-amazon.com/images/I/61RYG1rUxeL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Logitech G602 Lag-Free Wireless Gaming Mouse – 11 Programmable Buttons, Upto 2500 DPI"
+                  src="https://images-na.ssl-images-amazon.com/images/I/613KPiwwsvL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="NUBWO Gaming headsets PS4 N7 Stereo Xbox one Headset Wired PC Gaming Headphones with Noise Canceling Mic , Over Ear..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/51opmroKBgL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Orzly Carry Case Compatible with Nintendo Switch - Black Protective Hard Portable Travel Carry Case Shell Pouch for..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/61GggH1hAaL._AC_UL270_SR182,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="BEBONCOOL PS4 Controller Charger, Controller USB Charging Station Dock for DualShock 4, PlayStation 4 Charging Station..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/61gYe3YaoxL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="PICTEK Gaming Mouse Wired [7200 DPI] [Programmable] [Breathing Light] Ergonomic Game USB Computer Mice RGB Gamer Desktop..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/71zKhk9GyLL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Redragon S101 Wired Gaming Keyboard and Mouse Combo RGB Backlit Gaming Keyboard with Multimedia Keys Wrist Rest and Red..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/71GfTHgl0AL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="UGREEN Ethernet Adapter USB 2.0 to 10/100 Network RJ45 LAN Wired Adapter Compatible for Nintendo Switch, Wii, Wii U,..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/61J4ILcCZyL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="Microsoft Xbox Wireless Adapter for Windows 10"
+                  src="https://images-na.ssl-images-amazon.com/images/I/61OcRGpakjL._AC_UL270_SR270,270_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  alt="PICTEK Gaming Mouse Wired, RGB Chroma Backlit Gaming Mouse, 8 Programmable Buttons, 7200 DPI Adjustable, Comfortable..."
+                  src="https://images-na.ssl-images-amazon.com/images/I/61qeRQ18AkL._AC_UL405_SR228,405_.jpg"
+                  class="product-image"
+                  height="200px"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-------------------------------------- Serety ---------------------------->
+    <div class="container-fluid" id="navBackToTop">
+      <div class="row text-center py-3">
+        <div class="col-12"><a href="#top" class="text-white fw-bolder d-block w-100">Back to top</a></div>
+      </div>
+    </div>
+  
+    <section class="upfooter ">
+      <div class="d-flex justify-content-center align-items-center py-5">
+        <div class="container w-75 d-flex flex-column justify-content-center align-items-center">
+  
+          <div class="row text-white w-75 d-flex justify-content-between align-items-start">
+  
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-start">
+              <ul class="list-unstyled">
+                <li class="fw-bolder my-1">Get to Know Us</li>
+                <li><a href="https://www.amazon.jobs" class="text-white">Careers</a></li>
+                <li><a href="https://blog.aboutamazon.com/"
+                    class="text-white">Blog</a></li>
+                <li><a href=""
+                    class="text-white">About
+                    Amazon</a></li>
+                <li><a
+                    href="https://sustainability.aboutamazon.com/"
+                    class="text-white">Sustainability</a></li>
+                <li><a href="" class="text-white">Investor Relations</a></li>
+                <li><a href=""
+                    class="text-white">Amazon Devices</a></li>
+                <li><a
+                    href="https://www.aboutamazon.com"
+                    class="text-white">Amazon Tours</a></li>
+              </ul>
+            </div>
+  
+  
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-start">
+              <ul class="list-unstyled">
+                <li class="fw-bolder my-1">Make Money with Us</li>
+                <li><a
+                    href=""
+                    class="text-white">Sell products on Amazon</a></li>
+                <li><a href="https://developer.amazon.com" class="text-white">Sell apps on Amazon</a></li>
+                <li><a href="https://affiliate-program.amazon.com/" class="text-white">Become an Affiliate</a></li>
+                <li><a href="https://advertising.amazon.com/" class="text-white">Advertise Your
+                    Products</a></li>
+                <li><a href="" class="text-white">Self-Publish with Us</a></li>
+                <li><a href="" class="text-white">Host an Amazon Hub</a></li>
+                <li><a href="" class="text-white">See More Make Money with Us</a></li>
+              </ul>
+            </div>
+  
+  
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-start">
+              <ul class="list-unstyled">
+                <li class="fw-bolder my-1">Amazon Payment Products</li>
+                <li><a href="" class="text-white">Amazon
+                    Business Card</a></li>
+                <li><a href="" class="text-white">Shop with Points</a>
+                </li>
+                <li><a href=""
+                    class="text-white">Reload Your Balance</a></li>
+                <li><a href=""
+                    class="text-white">Amazon
+                    Currency Converter</a></li>
+              </ul>
+            </div>
+  
+  
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-start ">
+  
+              <ul class="list-unstyled">
+                <li class="fw-bolder my-1">Let Us Help You</li>
+                <li><a href="" class="text-white">Amazon and COVID-19</a></li>
+                <li><a href="" class="text-white">Your Account</a></li>
+                <li><a href="" class="text-white">Your Orders</a></li>
+                <li><a href="" class="text-white">Shipping Rates &amp; Policies</a></li>
+                <li><a href="" class="text-white">Returns&amp; Replacements</a></li>
+                <li><a href="" class="text-white">Manage Your Content and Devices</a></li>
+                <li><a href="" class="text-white">Amazon Assistant</a></li>
+                <li><a href="" class="text-white">Help</a></li>
+              </ul>
+            </div>
+  
+  
+          </div>
+  
+  
+        </div>
+      </div>
+  
+      <hr class="my-0 bg-secondary">
+      <div class="container py-4 d-flex justify-content-center align-items-center">
+        <div class="w-75 row py-3 d-flex justify-content-center  align-items-center">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-2 col-sm-12 my-2 d-lg-inline-block d-md-flex justify-content-center align-items-center">
+            <img src="images/logo/amazon_PNG6.png" class="w-100" alt="">
+          </div>
+          <div class="col-lg-9 col-12 d-lg-inline-block d-md-flex justify-content-center text-center align-items-center">
+  
+            <a href="" class="icp-button d-flex justify-content-center align-items-center "><i
+                class="fas fa-language mx-1"></i><span>Language - English</span></a>
+  
+            <a href="" class="icp-button d-flex justify-content-center align-items-center"> <i
+                class="fas fa-dollar-sign mx-1"></i> <span>USD - U.S. Dollar</span></a>
+  
+            <a href="" class="icp-button d-flex justify-content-center align-items-center"><i
+                class="fas fa-globe-europe mx-1"></i><span>Choose a country</span></a>
+  
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+    <footer class="navFooter">
+      <div class="container w-75 d-flex flex-column justify-content-center align-items-center">
+        <div id="grid-container" class="w-75">
+  
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">
+              Amazon Music <br> <span>Stream millions of songs</span>
+            </a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Amazon Advertising<br>
+              <span>Find, attract, and<br> engage
+                customers</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Amazon
+              Drive<br> <span>Cloud storage<br> from
+                Amazon</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">6pm<br> <span>Score deals<br> on fashion brands</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">AbeBooks<br> <span>Books, art<br> &amp;
+                collectibles</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">ACX <br> <span>Audiobook Publishing<br> Made Easy</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Alexa<br> <span>Actionable Analytics<br> for the
+                Web</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Sell on Amazon<br> <span>Start a Selling Account</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Amazon Business<br>
+              <span>Everything For<br> Your
+                Business</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">AmazonGlobal<br>
+              <span>Ship Orders<br>
+                Internationally</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Home
+              Services<br> <span>Experienced Pros<br> Happiness Guarantee</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://ignite.amazon.com/">Amazon Ignite<br> <span>Sell
+                your original<br> Digital
+                Educational<br> Resources</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://rapids.amazon.com/">Amazon Rapids<br> <span>Fun
+                stories for<br> kids on the
+                go</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://aws.amazon.com/">Amazon
+              Web
+              Services<br> <span>Scalable Cloud<br> Computing
+                Services</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.audible.com">Audible<br> <span>Listen to Books &amp; Original<br> Audio
+                Performances</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.bookdepository.com">Book Depository<br>
+              <span>Books With Free<br> Delivery Worldwide</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.boxofficemojo.com/">Box
+              Office Mojo<br> <span>Find Movie<br> Box Office Data</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.comixology.com">ComiXology<br> <span>Thousands of<br> Digital
+                Comics</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.dpreview.com">DPReview<br> <span>Digital<br> Photography</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.eastdane.com">East Dane<br>
+              <span>Designer Men's<br> Fashion</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.fabric.com">Fabric<br> <span>Sewing, Quilting<br> &amp;
+                Knitting</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.goodreads.com">Goodreads<br> <span>Book reviews<br> &amp;
+                recommendations</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.imdb.com">IMDb<br> <span>Movies, TV<br> &amp; Celebrities</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://pro.imdb.com">IMDbPro<br>
+              <span>Get Info Entertainment<br> Professionals Need</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://kdp.amazon.com">Kindle Direct Publishing<br>
+              <span>Indie Digital &amp; Print Publishing<br> Made Easy
+              </span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://videodirect.amazon.com">Prime
+              Video Direct<br> <span>Video Distribution<br> Made Easy</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.shopbop.com">Shopbop<br> <span>Designer<br> Fashion
+                Brands</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.woot.com">Woot!<br> <span>Deals and <br> Shenanigans</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.zappos.com">Zappos<br> <span>Shoes &amp;<br> Clothing</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://ring.com">Ring<br> <span>Smart Home<br> Security Systems
+              </span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://eero.com">eero WiFi<br> <span>Stream 4K Video<br> in Every Room</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://shop.ring.com">Neighbors
+              App <br> <span> Real-Time Crime<br> &amp; Safety Alerts
+              </span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Amazon Subscription
+              Boxes<br> <span>Top subscription boxes –
+                right to your door</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="https://www.pillpack.com">PillPack<br> <span>Pharmacy Simplified</span></a>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-content-start p-3">
+            <a href="">Amazon Second Chance<br>
+              <span>Pass it on, trade it in,<br>
+                give
+                it a second life</span></a>
+          </div>
+  
+  
+        </div>
+      </div>
+    </footer>
+  
+    <div id="copyrights" class=" navFooter d-flex justify-content-center align-items-center py-2">
+      <div class="container w-75 d-flex justify-content-center align-items-center">
+        <ul class="row list-unstyled d-flex justify-content-around align-items-center w-75">
+          <li class="col-6 col-md-3"><a href="" class="text-white">Conditions of Use</a></li>
+          <li class="col-6 col-md-3"><a href="" class="text-white">Privacy Notice</a></li>
+          <li class="col-6 col-md-3"><a href="" class="text-white">Interest-Based
+              Ads</a>
+          </li>
+          <li class="col-6 col-md-3 text-white-50">© 1996-2020, Amazon.com, Inc. or its affiliates</li>
+        </ul>
+      </div>
+    </div>
+  
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
